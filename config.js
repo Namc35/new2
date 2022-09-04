@@ -1,108 +1,46 @@
-let fs = require('fs')                    //CREATOR = YahyaGanzz , DEVBOT
-let chalk = require('chalk')
-global.owner = [
-  ['6285825568781'],
-  ['6285825568781'],
-  ['6285825568781', 'Owner ward.botz', true]  
+{
+  "ownerNumber": ["6285825568781@s.whatsapp.net"],
+  "ownerName": ["ward.botz"],
+  "ownerNum": "6285825568781",
+  "botName": "ward.bot",
+  "footer": "© Hitomi MD 2022",
+  "fake": "Bot By ward. Botz",
+  "sessionName": "hitomi",
+  "pathimg": "./media/hitomi.jpg",
   
-] 
-global.ownername = [['ward.botz']]
-global.namabot = [['ward.bot-MD']]
-global.ownerinsta = [['@wibu_indo_888816']]
-global.mods = [] 
-global.prems = [] 
-
-global.APIs = { // API Prefix
-  // name: 'https://website'
-  nrtm: 'https://nurutomo.herokuapp.com',
-  xteam: 'https://api.xteam.xyz',
-  zahir: 'https://zahirr-web.herokuapp.com',
-  bcil: 'https://75.119.137.248:21587',
-  neoxr: 'https://api.neoxr.eu.org/',
-  gimez: 'https://masgimenz.my.id/',
-  melcanz: 'https://melcanz.com',
-  pencarikode: 'https://pencarikode.xyz',
-  LeysCoder: 'https://leyscoders-api.herokuapp.com',
-  restapi: 'https://x-restapi.herokuapp.com',
-  alphabot: 'https://api-alphabot.herokuapp.com'
-}
-global.APIKeys = { // APIKey Here
-  // 'https://website': 'apikey'
-  'https://api.xteam.xyz': '524e9d1f64f72f79',
-  'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.neoxr.eu.org/': '0fWgL9ID',
-  'https://pencarikode.xyz': 'pais',
-  'https://melcanz.com': 'ZZBk7EBb',
-  'https://leyscoders-api.herokuapp.com': 'dappakntlll',
-  'https://x-restapi.herokuapp.com': 'BETA',
-  'https://api-alphabot.herokuapp.com': 'N7axnIq3'
-}
-
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
-
-const spack = fs.readFileSync("lib/exif.json")
-const stickerpack = JSON.parse(spack)
-if (stickerpack.spackname == '') {
-  var sticker_name = 'ward.botz'
-  var sticker_author = 'By ward.botz'
-} else {
-  var sticker_name = stickerpack.spackname
-  var sticker_author = stickerpack.sauthor
-}
-
-const file_exif = "lib/exif.json"
-fs.watchFile(file_exif, () => {
-  fs.unwatchFile(file_exif)
-  console.log(chalk.redBright("Update 'exif.json'"))
-  delete require.cache[file_exif]
-  require('./lib/exif.json')
-})
-
-// Sticker WM
-global.packname = sticker_name
-global.author = sticker_author
-global.wm = 'Created by YahyaGanzz'
-
-global.multiplier = 1000 // The higher, The harder levelup
-
-global.rpg = {
-  emoticon(string) {
-    string = string.toLowerCase()
-    let emot = {
-      exp: '✉️',
-      money: '💵',
-      potion: '🥤',
-      diamond: '💎',
-      common: '📦',
-      uncommon: '🎁',
-      mythic: '🗳️',
-      legendary: '🗃️',
-      pet: '🎁',
-      trash: '🗑',
-      armor: '🥼',
-      sword: '⚔️',
-      wood: '🪵',
-      rock: '🪨',
-      string: '🕸️',
-      horse: '🐎',
-      cat: '🐈' ,
-      dog: '🐕',
-      fox: '🦊',
-      petFood: '🍖',
-      iron: '⛓️',
-      gold: '👑',
-      emerald: '💚'
-    }
-    let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
-    if (!results.length) return ''
-    else return emot[results[0][0]]
+  "sb": "➸",
+  "sb2": "❐",
+  
+  "leyskey": "IkyOgiwara", 
+  "lolkey": "Beli Sendiri Ygy",
+  "zenzkey": "4cb6451aa6",
+  
+  "ButtonTextMenu1": "Youtube Owner",
+  "ButtonTextMenu2": "Rest Api",
+  "quickReplyButton3": "List Menu 📑",
+  "quickReplyButton4": "Donasi 💰",
+  "quickReplyButton5": "Rate Bot ⭐",
+   
+  "ButtonMenuLink1": "https://youtube.com/c/ChristianID99",
+  "ButtonMenuLink2": "https://rest-api-hitomi.herokuapp.com/docs",
+  "displayTextMenu3": "command",
+  "displayTextMenu4": "donasi",
+  "displayTextMenu5": "rating",
+  
+  "QrisAllPay": "https://i.ibb.co/f2h3MDQ/Qris.jpg",
+  "textBarisDonate1": "DANA : SCAN QRIS DIATAS",
+  "textBarisDonate2": "OVO : SCAN QRIS DIATAS",
+  "textBarisDonate3": "GOPAY : SCAN QRIS DIATAS",
+  "textBarisDonate4": "PULSA : 0813-2850-7885",
+  
+  "randomlink": ["https://i.ibb.co/Ybbz3qm/b1511a60173f.jpg","https://i.ibb.co/gzx9tkF/e525998814c2.jpg","https://i.ibb.co/7t4ndRM/9d4d951fe9c8.jpg","https://i.ibb.co/61WQK7v/44d84e1d31fc.jpg"],
+  "welcomenya": "Intro Dulu Yuk Kak\n\n\n📛 Nama : \n🔞 Umur :\n🏙️ Askot :\n👫 Gender :\n\nSemoga Kamu Senang Berada Disini Serta Jangan Lupa Untuk Membaca Dan Mematuhi Rules Yang Ada",
+  "leavenya": "Tetap Putus Asa Jangan Semangat Dan Jadilah Beban Keluarga 🤙🗿",
+  
+  "gamewaktu": 60,
+  "limitCount": 15,
+  "gcount": {
+	"prem": 99999,
+	"user": 20
   }
 }
-
-let file = require.resolve(__filename)
-fs.watchFile(file, () => {
-  fs.unwatchFile(file)
-  console.log(chalk.redBright("Update 'config.js'"))
-  delete require.cache[file]
-  require(file)
-})
